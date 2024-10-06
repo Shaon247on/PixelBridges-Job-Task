@@ -1,11 +1,16 @@
 import localFont from "next/font/local";
-import { Bebas_Neue, Montserrat } from 'next/font/google';
+import { Bebas_Neue, Montserrat, Kumbh_Sans } from 'next/font/google';
 import "./globals.css";
 
 
 const bebas = Bebas_Neue({ weight: '400', variable: "--font-bebas_neue", subsets: ["latin"] })
+const kumbh = Kumbh_Sans({
+  weights: ['400', '500', '600', '700', '800', '900'], // Make sure this font supports these weights
+  variable: "--font-Kumbh_Sans",
+  subsets: ["latin"]
+})
 
-const montserrat = Montserrat({ weight: '700', variable: "--font-montserrat", subsets: ["latin"] })
+const montserrat = Montserrat({ weight: ['400', '500', '600', '700', '800', '900'], variable: "--font-montserrat", subsets: ["latin"] })
 
 const baron = localFont({
   src: "../../public/Baron_Kuffner.otf",
@@ -27,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${baron.variable} ${bebas.variable} ${montserrat.variable} ${cheesburga.variable} antialiased`}
+        className={`${baron.variable} ${bebas.variable} ${montserrat.variable} ${cheesburga.variable} ${kumbh.variable} antialiased`}
       >
         {children}
       </body>

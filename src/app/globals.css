@@ -10,19 +10,27 @@ display: none;
 
 .text-scroll{
   overflow-y: scroll;
+  border-radius: 25px;
+ 
 }
 
 .text-scroll::-webkit-scrollbar{
   width: 5px;
+  border-radius: 25px;
+  
 }
 
 .text-scroll::-webkit-scrollbar-thumb{
   border-radius: 30px;
   background: gray;
   border-radius: 25px;
+ 
+
 }
 .text-scroll::-webkit-scrollbar-track{
   background: #fff;
+  border-radius: 25px;
+   margin-top: 16px;
 }
 
 /* hide scrollbar from firefox */
@@ -42,7 +50,7 @@ body{
   color: rgb(20, 17, 17);
   padding: 20px;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 59%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 70%);
 }
 
 .gradient-background {
@@ -64,6 +72,12 @@ body{
 
 }
 
+
+.water-reflection{
+  -webkit-box-reflect: below -280px linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(0, 0, 0,0) );
+  
+}
+
 /* background: linear-gradient(to top,  #7eff5e, #fff280); */
 .gradient-text {
   background: -webkit-linear-gradient(#fff280, #7eff5e);
@@ -74,7 +88,7 @@ body{
 }
 
 .gradient-text-2 {
-  background: -webkit-linear-gradient(#FFF280, #FFA800);
+  background: -webkit-linear-gradient(#FFF280, #f87a01);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 50px;

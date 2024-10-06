@@ -30,6 +30,7 @@ module.exports = {
         Bebas:["var(--font-bebas_neue)"],
         Montserrat:["var(--font-montserrat)"],
         Cheesburga:["var(--font-CHEESEBURGA)"],
+        Kumbh:["var(--font-Kumbh_Sans)"],
       }
     },
   },
