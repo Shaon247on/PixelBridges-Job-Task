@@ -18,6 +18,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'mainBG': "url('/Image/main-Background.jpg')", 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
