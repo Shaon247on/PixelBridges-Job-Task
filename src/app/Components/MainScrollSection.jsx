@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from './Slider';
 import Banner from './Banner';
 import PhotoSlider from './PhotoSlider';
+import ProjectSection from './ProjectSection';
 
 
 
@@ -11,7 +12,8 @@ const MainScrollSection = () => {
 
            <Banner/>
             <PhotoSlider/>
-            <Slider />
+            <ProjectSection/>
+            {/* <Slider /> */}
         </div>
     );
 };

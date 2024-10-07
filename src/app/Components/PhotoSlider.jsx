@@ -42,7 +42,7 @@ const PhotoSlider = () => {
                 <button onClick={() => setToggle(3)} className={`font-Montserrat ${toggle === 3 ? "text-[#ffa800]" : "text=white"} font-black text-[32px]`}>Video</button>
             </div>
 
-            <div className='mb-96 flex items-center gap-6 mt-[37px] pb-48 pt-[20px] bg-white relative z-[100]'>
+            <div className='mb-16 flex items-center gap-6 mt-[37px] pb-48 pt-[20px] bg-white relative z-[100]'>
 
                 {/* All slider */}
                 <div className={`${toggle === 1 ? "block" : "hidden"} w-[1522px] h-[369px] ml-[75px]`}>
