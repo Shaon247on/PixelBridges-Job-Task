@@ -74,7 +74,7 @@ body{
 
 
 .water-reflection{
-  -webkit-box-reflect: below -280px linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(0, 0, 0,0) );
+  -webkit-box-reflect: below -280px linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0,0.15) );
   
 }
 
@@ -96,4 +96,10 @@ body{
     margin: 2.5px 0px 4px 0px; /* Adds space between the wrapped links */
     text-decoration: none;
 }
+
+
+
+
+/* swiper.js nagivation button customization */
+
 

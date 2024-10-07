@@ -23,11 +23,11 @@ const Slider = () => {
     const swiper1Ref = useRef(null);
     const swiper2Ref = useRef(null);
     return (
-        <div className="relative md:w-[600px] lg:w-[1652px] md:h-[400px] lg:h-[1155px] mx-auto">
+        <div className="relative md:w-[600px] lg:w-[1652px] md:h-[400px] lg:h-[1080px] mx-auto">
             {/* First Slider */}
 
             <Swiper
-                className="absolute z-10 rounded-[25px]"
+                className="absolute w-full h-full z-10 rounded-[25px]"
                 modules={[Navigation, EffectFade, Autoplay]}
                 effect="fade"
                 spaceBetween={50}
