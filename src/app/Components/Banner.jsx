@@ -14,7 +14,7 @@ const Banner = () => {
                     <p className='text-[46px] w-[769px] h-[532px] font-Kumbh font-bold text-[#353535] text-end'>The Central Asian Shepherd Dog, also known as Alabay, has been a guardian of livestock and property for centuries. Originating from Central Asia, these dogs are renowned for their courage, strength, and loyalty.</p>
                 </div>
             </div>
-            <Image src={dog1} alt='puppy' className='absolute top-[370px] water-reflection' />
+            <Image src={dog1} alt='puppy' className='absolute top-[370px] water-reflection z-[1]' />
         </React.Fragment>
     );
 };

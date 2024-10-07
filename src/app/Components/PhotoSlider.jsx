@@ -36,7 +36,7 @@ const PhotoSlider = () => {
     const swiper3Ref = useRef(null);
     return (
         <React.Fragment>
-            <div className='flex items-center justify-center gap-11 '>
+            <div className='flex items-center justify-center gap-11 z-[10] relative'>
                 <button onClick={() => setToggle(1)} className={`font-Montserrat ${toggle === 1 ? "text-[#ffa800]" : "text=white"} font-black text-[32px]`}>All</button>
                 <button onClick={() => setToggle(2)} className={`font-Montserrat ${toggle === 2 ? "text-[#ffa800]" : "text=white"} font-black text-[32px]`}>Photo</button>
                 <button onClick={() => setToggle(3)} className={`font-Montserrat ${toggle === 3 ? "text-[#ffa800]" : "text=white"} font-black text-[32px]`}>Video</button>

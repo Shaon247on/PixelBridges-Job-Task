@@ -55,8 +55,7 @@ body{
 
 .slanted-box-mid {
 
-  color: rgb(20, 17, 17);
-  padding: 20px;
+  color: rgb(20, 17, 17);  
   position: absolute;
   top: 50%;
   clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 83%);
@@ -64,12 +63,22 @@ body{
 
 .gradient-background {
   background: radial-gradient(circle, #fff17c -20%, #ffc701 100%);
-  height: 1500px;
+  height: 1300px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
+
+.gradient-background2 {
+  background: radial-gradient(circle, #fff17c -20%, #ffa600 100%);
+  height: 1950px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 
 .gradient-text {
   background: linear-gradient(to top, );
@@ -83,9 +92,23 @@ body{
 
 
 .water-reflection{
-  -webkit-box-reflect: below -280px linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0,0.15) );
-  
+  -webkit-box-reflect: below -280px linear-gradient(transparent, transparent, rgba(226, 146, 146, 0.322) );
 }
+
+
+
+.water-reflection2 {
+  -webkit-box-reflect: below -160px linear-gradient(transparent, transparent, rgba(128, 128, 128, 0.3));  
+}
+
+
+.shadow-effect{
+background: #000000a8;
+filter: blur(20px);
+
+}
+
+
 
 /* background: linear-gradient(to top,  #7eff5e, #fff280); */
 .gradient-text {

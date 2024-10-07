@@ -3,6 +3,7 @@ import Slider from './Slider';
 import Banner from './Banner';
 import PhotoSlider from './PhotoSlider';
 import ProjectSection from './ProjectSection';
+import RoadMap from './RoadMap';
 
 
 
@@ -12,7 +13,7 @@ const MainScrollSection = () => {
 
            <Banner/>
             <PhotoSlider/>
-            <ProjectSection/>
+            <ProjectSection/>            
             {/* <Slider /> */}
         </div>
     );
