@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectFade, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide,  } from 'swiper/react';
+import { Navigation, EffectFade, Autoplay, Mousewheel } from 'swiper/modules';
 
 
 import img1 from '../../../public/Image/Alabay-Merch/black-hoodie-bck.png';
@@ -30,9 +30,9 @@ const Slider = () => {
 
                 <Swiper
                     className="absolute w-full h-full z-10 rounded-[25px]"
-                    modules={[Navigation, EffectFade, Autoplay]}
+                    modules={[ EffectFade, Autoplay]}
                     effect="fade"
-                    spaceBetween={50}
+                    spaceBetween={50}                    
                     slidesPerView={1}
                     autoplay={{
                         delay: 2500,
@@ -60,10 +60,10 @@ const Slider = () => {
                 {/* Second Slider */}
                 <Swiper
                     className="absolute z-30 w-full h-full top-[-270px] md:top-[-430px] lg:top-[-1150px]"
-                    modules={[Navigation, Autoplay]}
+                    modules={[Autoplay]}
                     effect="fade"
                     spaceBetween={50}
-                    slidesPerView={1}
+                    slidesPerView={1}                    
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,

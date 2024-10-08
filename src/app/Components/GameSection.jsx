@@ -10,6 +10,7 @@ import cover1 from '../../../public/Image/Alabay-Games/gameProfile-1.png';
 import cover2 from '../../../public/Image/Alabay-Games/gameProfile-2.png';
 import arrow from '../../../public/Image/Next-Button.svg';
 import arrow2 from '../../../public/Image/arrow-3.png';
+import Link from "next/link";
 
 
 const GameSection = () => {
@@ -66,10 +67,10 @@ const GameSection = () => {
                                 }}
                             >
                                 <SwiperSlide>
-                                    <button className="bg-[#843AFC] font-Montserrat text-[40px] flex items-center gap-[45px] font-black text-center text-white rounded-full py-[34px] px-[78px]">DISCOVER <Image src={arrow2} alt="arrow"/></button>
+                                    <Link href="/Games/Guardian"><button className="bg-[#843AFC] font-Montserrat text-[40px] flex items-center gap-[45px] font-black text-center text-white rounded-full py-[34px] px-[78px]">DISCOVER <Image src={arrow2} alt="arrow"/></button></Link>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <button className="bg-[#45D689] font-Montserrat text-[40px] flex items-center gap-[45px] font-black text-center text-white rounded-full py-[34px] px-[78px]">DISCOVER <Image src={arrow2} alt="arrow"/></button>
+                                    <Link href='/Games/Heritage'><button className="bg-[#45D689] font-Montserrat text-[40px] flex items-center gap-[45px] font-black text-center text-white rounded-full py-[34px] px-[78px]">DISCOVER <Image src={arrow2} alt="arrow"/></button></Link>
                                 </SwiperSlide>
                             </Swiper>
                         </div>

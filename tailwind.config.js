@@ -27,6 +27,8 @@ module.exports = {
       },
       backgroundImage: {
         'linksBG': "url('/Image/Frame-36.png')", 
+        'guardian': "url('/Image/Alabay-Games/Guard-gradient.png')", 
+        'heritage': "url('/Image/Alabay-Games/heritage-gradient.png')", 
       },
       colors: {
         background: "var(--background)",
@@ -38,6 +40,7 @@ module.exports = {
         Montserrat:["var(--font-montserrat)"],
         Cheesburga:["var(--font-CHEESEBURGA)"],
         Kumbh:["var(--font-Kumbh_Sans)"],
+        Helvetica:["var(--font-helvetica)"],
       }
     },
   },

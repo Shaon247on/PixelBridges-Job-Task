@@ -17,6 +17,11 @@ const baron = localFont({
   weight: "100 400 700 900",
   variable: "--font-baron"
 });
+const helvetica = localFont({
+  src: "../../public/Helvetica-Bold.ttf",
+  weight: "400 700",
+  variable: "--font-helvetica"
+});
 const cheesburga = localFont({
   src: "../../public/CHEESEBURGA.ttf",
   weight: "400",
@@ -32,7 +37,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${baron.variable} ${bebas.variable} ${montserrat.variable} ${cheesburga.variable} ${kumbh.variable} antialiased`}
+        className={`${baron.variable} ${bebas.variable} ${helvetica.variable} ${montserrat.variable} ${cheesburga.variable} ${kumbh.variable} antialiased`}
       >
         {children}
       </body>
