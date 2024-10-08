@@ -321,3 +321,193 @@ ul li::before {
   animation-range-start:400px ; 
 }
 
+
+
+
+
+
+
+
+/* ------------- Tablet ----------------- */
+
+/* Tablet Devices (768px - 1024px) */
+@media (max-width: 1024px) {
+  .slanted-box {
+    padding: 15px;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 75%);
+  }
+
+  .slanted-box-mid {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  }
+
+  .gradient-background {
+    height: 1000px;
+    padding: 20px;
+  }
+
+  .gradient-background2 {
+    height: 1400px;
+    padding: 20px;
+  }
+
+  .gradient-background3 {
+    height: 1500px;
+    padding: 20px;
+  }
+
+  .gradient-background4 {
+    height: 1500px;
+    padding: 20px;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-scroll {
+    overflow-y: scroll;
+  }
+
+  .text-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .slanted-box {
+    padding: 15px;
+  }
+
+  .slanted-box-mid {
+    padding: 15px;
+  }
+
+  .image-background1,
+  .image-background2,
+  .image-background3,
+  .image-background4 {
+    background-size: cover;
+  } 
+
+  .scroll-container {
+    height: 60vh;
+  }
+
+  .shadow-effect {
+    filter: blur(15px);
+  }
+
+  .gradient-text {
+    letter-spacing: -0.03em;
+    -webkit-text-stroke: 5px #000;
+  }
+
+  .gradient-text-2 {
+    line-height: 40px;
+  }
+
+  .water-reflection,
+  .water-reflection2,
+  .water-reflection3,
+  .water-reflection4 {
+    -webkit-box-reflect: below -150px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
+  }
+}
+
+
+
+
+
+
+
+/* ------------- Mobile ----------------- */
+
+/* Mobile Devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .slanted-box {
+    padding: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
+  }
+
+  .slanted-box-mid {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  }
+
+  .gradient-background {
+    height: 800px;
+    padding: 15px;
+  }
+
+  .gradient-background2 {
+    height: 1200px;
+    padding: 15px;
+  }
+
+  .gradient-background3 {
+    height: 1300px;
+    padding: 15px;
+  }
+
+  .gradient-background4 {
+    height: 1300px;
+    padding: 15px;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-scroll {
+    overflow-y: scroll;
+  }
+
+  .text-scroll::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .slanted-box {
+    padding: 10px;
+  }
+
+  .slanted-box-mid {
+    padding: 10px;
+  }
+
+  .image-background1,
+  .image-background2,
+  .image-background3,
+  .image-background4 {
+    background-size: cover;
+  }  
+
+  .scroll-container {
+    height: 50vh;
+  }
+
+  .shadow-effect {
+    filter: blur(10px);
+  }
+
+  .gradient-text {
+    letter-spacing: -0.02em;
+    -webkit-text-stroke: 3px #000;
+  }
+
+  .gradient-text-2 {
+    line-height: 35px;
+  }
+
+  .water-reflection,
+  .water-reflection2,
+  .water-reflection3,
+  .water-reflection4 {
+    -webkit-box-reflect: below -120px linear-gradient(transparent, transparent 50%, rgba(128, 128, 128, 0.2));
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #90FFAE;
+  }
+}
