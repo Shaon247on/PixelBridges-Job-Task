@@ -39,8 +39,6 @@ const Slider = () => {
                         disableOnInteraction: false,
                     }}
                     loop={true}
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => {
                         swiper1Ref.current = swiper;  // Store swiper instance for first slider
                     }}
@@ -71,8 +69,6 @@ const Slider = () => {
                         disableOnInteraction: false,
                     }}
                     loop={true}
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => {
                         swiper2Ref.current = swiper;  // Store swiper instance for second slider
                     }}

@@ -26,7 +26,7 @@ module.exports = {
         ]
       },
       backgroundImage: {
-        'mainBG': "url('/Image/main-Background.jpg')", 
+        'linksBG': "url('/Image/Frame-36.png')", 
       },
       colors: {
         background: "var(--background)",

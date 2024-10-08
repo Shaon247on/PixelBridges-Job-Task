@@ -246,7 +246,7 @@ const PhotoSlider = () => {
                         swiper2Ref.current?.slideNext();                       
                         swiper3Ref.current?.slideNext();                       
                     }}
-                    className="bg-[#353535] py-[58px] px-[32px] rounded-[28px]"
+                    className="bg-[#353535] py-[58px] px-[32px] rounded-[28px] shadow-drop"
                 >
                     <Image src={nextButton} alt="right" className="w-[56.85px] h-[56.85px]" />
                 </button>

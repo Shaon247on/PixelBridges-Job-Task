@@ -6,6 +6,8 @@ import CardSection from './CardSection';
 import TokenSection from './TokenSection';
 import Slider from './Slider';
 import GameSection from './GameSection';
+import PreviewSection from './PreviewSection';
+import Footer from './Footer';
 
 
 
@@ -20,6 +22,8 @@ const MainScrollSection = () => {
             <TokenSection/>      
             <Slider/>
             <GameSection/>
+            <PreviewSection/>
+            <Footer/>
         </div>
     );
 };
