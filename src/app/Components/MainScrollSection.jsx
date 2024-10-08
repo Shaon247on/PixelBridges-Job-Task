@@ -13,7 +13,7 @@ import Footer from './Footer';
 
 const MainScrollSection = () => {
     return (
-        <div className="absolute text-scroll w-[1796px] h-[95%] rounded-xl z-10 overflow-hidden overflow-y-scroll left-1/2 transform -translate-x-1/2 bg-white -mt-20">
+        <div className="absolute text-scroll md:w-full lg:w-[1796px] h-full lg:h-[95%] lg:rounded-[25px] z-10 overflow-hidden overflow-y-scroll left-1/2 transform -translate-x-1/2 bg-white lg:-mt-20">
 
            <Banner/>
             <PhotoSlider/>

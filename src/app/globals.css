@@ -10,8 +10,6 @@ body::-webkit-scrollbar {
 
 .text-scroll {
   overflow-y: scroll;
-  border-radius: 25px;
-
 }
 
 .text-scroll::-webkit-scrollbar {
