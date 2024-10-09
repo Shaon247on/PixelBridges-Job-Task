@@ -24,12 +24,12 @@ const Slider = () => {
     const swiper2Ref = useRef(null);
     return (
         <React.Fragment>
-            <h1 className="text-[48px] md:text-[90px] lg:text-[220px] mt-[100px]  md:mt-[180px] lg:mt-[350px] mb-[100px]  md:mb-[180px] lg:mb-[250px] text-center font-Cheesburga text-[#FFA800]">merchandise</h1>
-            <div className="relative z-[4] md:w-[600px] lg:w-[1652px] md:h-[400px] lg:h-[1080px] mx-auto">
+            <h1 className="text-[48px] md:text-[90px] lg:text-[220px] mt-[300px] md:mt-[180px] lg:mt-[350px] mb-[100px]  md:mb-[180px] lg:mb-[250px] text-center font-Cheesburga text-[#FFA800]">merchandise</h1>
+            <div className="relative z-[4] md:w-[600px] lg:w-[1652px] h-[200px] md:h-[400px] lg:h-[1080px] mx-auto">
                 {/* First Slider */}
 
                 <Swiper
-                    className="absolute w-full h-full z-10 rounded-[25px]"
+                    className="absolute w-full lg:h-full z-10 rounded-[25px]"
                     modules={[ EffectFade, Autoplay]}
                     effect="fade"
                     spaceBetween={50}                    
@@ -88,7 +88,7 @@ const Slider = () => {
                 </Swiper>
 
                 {/* Custom Navigation Buttons */}
-                <div className="absolute bottom-[65%] md:bottom-[35%] lg:bottom-[45.5%] left-1/2 transform -translate-x-1/2 z-50 flex justify-between w-full px-2 md:px-4 lg:px-[43.5px]">
+                <div className="absolute bottom-[15%] md:bottom-[35%] lg:bottom-[45.5%] left-1/2 transform -translate-x-1/2 z-50 flex justify-between w-full px-2 md:px-4 lg:px-[43.5px]">
                     <button
                         onClick={() => {
                             swiper1Ref.current?.slidePrev();

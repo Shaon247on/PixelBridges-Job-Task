@@ -5,7 +5,7 @@ import RoadMap from './RoadMap';
 
 const ProjectSection = () => {
     return (
-        <div className="relative mt-[800px] lg:mt-[700px] h-[900px] lg:h-[2500px]">
+        <div className="relative mt-[800px] lg:mt-[700px] h-[750px] md:h-[900px] lg:h-[2500px]">
             <div className="slanted-box-mid gradient-background2 w-[100%] -top-[497px] md:-top-[370px] lg:top-0 z-[1] absolute" />
             <div className="absolute z-20 w-full -top-[594px]">
                 <h1 className='text-[48px] md:text-[90px] lg:text-[220px] font-Cheesburga text-[#ffa800] text-center -mt-9'>PROJECT VISION</h1>

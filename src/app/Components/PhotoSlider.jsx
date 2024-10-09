@@ -146,8 +146,6 @@ const PhotoSlider = () => {
                         modules={[Navigation]}
                         spaceBetween={50}
                         slidesPerView={3}
-                        pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
                         onSwiper={(swiper) => {
                             swiper3Ref.current = swiper;  // Store swiper instance for first slider
                         }}
@@ -191,8 +189,6 @@ const PhotoSlider = () => {
                         modules={[Navigation]}
                         spaceBetween={50}
                         slidesPerView={3}
-                        pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
                         onSwiper={(swiper) => {
                             swiper2Ref.current = swiper;  // Store swiper instance for first slider
                         }}
