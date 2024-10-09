@@ -36,15 +36,16 @@ const PhotoSlider = () => {
     const swiper3Ref = useRef(null);
     return (
         <React.Fragment>
-            <div className='flex items-center justify-center gap-11 z-[10] relative mt-24 lg:-mt-28'>
-                <button onClick={() => setToggle(1)} className={`font-Montserrat ${toggle === 1 ? "text-[#ffa800]" : "text=white"} font-black text-[32px]`}>All</button>
-                <button onClick={() => setToggle(2)} className={`font-Montserrat ${toggle === 2 ? "text-[#ffa800]" : "text=white"} font-black text-[32px]`}>Photo</button>
-                <button onClick={() => setToggle(3)} className={`font-Montserrat ${toggle === 3 ? "text-[#ffa800]" : "text=white"} font-black text-[32px]`}>Video</button>
+            <div className='flex items-center justify-center gap-8 md:gap-11 z-[10] relative mt-24 lg:-mt-28'>
+                <button onClick={() => setToggle(1)} className={`font-Montserrat ${toggle === 1 ? "text-[#ffa800]" : "text=white"} font-black text-[24px] md:text-[32px]`}>All</button>
+                <button onClick={() => setToggle(2)} className={`font-Montserrat ${toggle === 2 ? "text-[#ffa800]" : "text=white"} font-black text-[24px] md:text-[32px]`}>Photo</button>
+                <button onClick={() => setToggle(3)} className={`font-Montserrat ${toggle === 3 ? "text-[#ffa800]" : "text=white"} font-black text-[24px] md:text-[32px]`}>Video</button>
             </div>
 
-            <div className='mb-16 flex flex-col lg:flex-row items-center gap-6 mt-[37px] pb-48 pt-[20px] bg-white relative z-[100]'>
+            <div className='lg:mb-16 flex flex-col lg:flex-row items-center gap-6 mt-[37px] lg:pb-48 pt-[20px] bg-white relative z-[100]'>
 
                 {/* All slider */}
+                
                 <div className={`${toggle === 1 ? "block" : "hidden"} w-[340px] md:w-[730px] lg:w-[1522px] h-[369px] mx-10px lg:mx-0 lg:ml-[75px]`}>
                     <Swiper
                         // install Swiper modules                        
@@ -139,7 +140,7 @@ const PhotoSlider = () => {
 
                 {/* Photo  */}
 
-                <div className={`${toggle === 2 ? "block" : "hidden"} w-[1522px] h-[369px] lg:ml-[75px]`}>
+                <div className={`${toggle === 2 ? "block" : "hidden"} w-[340px] md:w-[730px] lg:w-[1522px] h-[369px] mx-10px lg:mx-0 lg:ml-[75px]`}>
                     <Swiper
                         // install Swiper modules
                         modules={[Navigation]}
@@ -152,24 +153,29 @@ const PhotoSlider = () => {
                         }}
                         onSlideChange={() => console.log('slide change')}
                         loop={true}
+                        breakpoints={{
+                            1024:{slidesPerView:3},
+                            768:{slidesPerView: 2,},
+                            375:{slidesPerView: 1 },
+                        }}
                     >
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg bg-[#6a6a6a] flex items-center justify-center'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg bg-[#6a6a6a] flex items-center justify-center'>
                                 <Image src={dog1} alt='Image-1' className='object-cover object-center' />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
                                 <Image src={dog2} alt='Imag-2' className='object-cover object-center' />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
                                 <Image src={dog3} alt='Image-3' className='object-cover object-center' />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
                                 <Image src={dog4} alt='Imag-4' />
                             </div>
                         </SwiperSlide>
@@ -178,9 +184,8 @@ const PhotoSlider = () => {
 
                 {/* video  */}
 
-
                 
-                <div className={`${toggle === 3 ? "block" : "hidden"} w-[1522px] h-[369px] lg:ml-[75px]`}>
+                <div className={`${toggle === 3 ? "block" : "hidden"} w-[340px] md:w-[730px] lg:w-[1522px] h-[369px] mx-10px lg:mx-0 lg:ml-[75px]`}>
                     <Swiper
                         // install Swiper modules
                         modules={[Navigation]}
@@ -193,10 +198,15 @@ const PhotoSlider = () => {
                         }}
                         onSlideChange={() => console.log('slide change')}
                         loop={true}
+                        breakpoints={{
+                            1024:{slidesPerView:3},
+                            768:{slidesPerView: 2,},
+                            375:{slidesPerView: 1 },
+                        }}
                     >
                         
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
                                 <video 
                                  src={video1}
                                  autoPlay                                  
@@ -207,7 +217,7 @@ const PhotoSlider = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
                                 <video 
                                  src={video2}
                                  autoPlay                                  
@@ -218,7 +228,7 @@ const PhotoSlider = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
                                 <video 
                                  src={video3}
                                  autoPlay                                  
@@ -229,7 +239,7 @@ const PhotoSlider = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
+                            <div className='w-full lg:w-[456px] h-[310px] rounded-lg flex items-center justify-center bg-[#6a6a6a]'>
                                 <video 
                                  src={video4}
                                  autoPlay                                  
@@ -249,9 +259,9 @@ const PhotoSlider = () => {
                         swiper2Ref.current?.slideNext();                       
                         swiper3Ref.current?.slideNext();                       
                     }}
-                    className="bg-[#353535] py-[58px] px-[32px] rounded-[28px] shadow-drop"
+                    className="bg-[#353535] py-[15px] md:py-[22px] lg:py-[58px] px-[25px] md:px-[40px] lg:px-[32px] rounded-[28px] shadow-drop -mt-10 lg:mt-0"
                 >
-                    <Image src={nextButton} alt="right" className="w-[56.85px] h-[56.85px]" />
+                    <Image src={nextButton} alt="right" className="w-[40px] md:w-[56.85px] h-[30px] md:h-[56.85px]" />
                 </button>
             </div>
         </React.Fragment>
