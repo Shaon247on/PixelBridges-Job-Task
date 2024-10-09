@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import dog1 from '../../../public/Image/dog-1.png';
+import dog1 from '../../../public/Image/banner.png';
 import React from 'react';
 
 const Banner = () => {
