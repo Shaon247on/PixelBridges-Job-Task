@@ -411,7 +411,12 @@ ul li::before {
   .water-reflection2{
     -webkit-box-reflect: below -68px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
   }
-  .water-reflection3,
+  
+  .water-reflection3{
+    -webkit-box-reflect: below -32px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
+
+  }
+
   .water-reflection4 {
     -webkit-box-reflect: below -150px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
   }
@@ -503,7 +508,7 @@ ul li::before {
   .water-reflection,
   .water-reflection2,
   .water-reflection3{
-    -webkit-box-reflect: below -32px linear-gradient(transparent, transparent 70%, rgba(128, 128, 128, 0.2));
+    -webkit-box-reflect: below -32px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
 
   }
   .water-reflection4 {
