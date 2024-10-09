@@ -22,8 +22,8 @@ const GameSection = () => {
             <div className='relative'>
                 <div className="slanted-box-mid gradient-background4 w-[100%] z-[-1] absolute -top-[430px]" />
 
-                <h1 className='text-[220px] text-white text-center font-Cheesburga pt-80'>Games</h1>
-                <p className='text-[64px] font-Montserrat font-black text-center'>Stay tuned for upcoming games !</p>
+                <h1 className='text-[90px] lg:text-[220px] text-white text-center font-Cheesburga pt-80'>Games</h1>
+                <p className='text-[28px] lg:text-[64px] font-Montserrat font-black text-center'>Stay tuned for upcoming games !</p>
                 <div className="mx-[55px] mt-[165px]">
 
                     <div className="relative w-full">

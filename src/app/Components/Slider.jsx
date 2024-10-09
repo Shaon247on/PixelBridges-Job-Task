@@ -24,7 +24,7 @@ const Slider = () => {
     const swiper2Ref = useRef(null);
     return (
         <React.Fragment>
-            <h1 className="text-[220px] mt-[350px] mb-[250px] text-center font-Cheesburga text-[#FFA800]">merchandise</h1>
+            <h1 className="text-[48px] md:text-[90px] lg:text-[220px] mt-[100px]  md:mt-[180px] lg:mt-[350px] mb-[100px]  md:mb-[180px] lg:mb-[250px] text-center font-Cheesburga text-[#FFA800]">merchandise</h1>
             <div className="relative z-[4] md:w-[600px] lg:w-[1652px] md:h-[400px] lg:h-[1080px] mx-auto">
                 {/* First Slider */}
 
@@ -108,7 +108,7 @@ const Slider = () => {
                         <Image src={arrow} alt="right" className="rotate-180" />
                     </button>
                 </div>
-                <h1 className="font-Montserrat absolute bottom-[65%] md:bottom-[35%] lg:top-[218px] right-[80px] transform -translate-x-1/2 z-50 text-[36px] font-black">Coming Soon...</h1>
+                <h1 className="font-Montserrat absolute bottom-[65%] md:bottom-[35%] top-[30px] md:top-[60px] lg:top-[218px] right-[10px] md:right-[0px] lg:right-[80px] transform md:-translate-x-1/2 z-50 lg:text-[36px] font-black">Coming Soon...</h1>
             </div>
         </React.Fragment>
     );
