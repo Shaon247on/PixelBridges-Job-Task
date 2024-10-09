@@ -263,9 +263,8 @@ ul li::before {
 }
 
 .scroll-container {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
+  scroll-snap-type: y mandatory;  
+  overflow-y: scroll; 
   height: 70vh;
 }
 

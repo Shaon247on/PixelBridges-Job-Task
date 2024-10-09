@@ -69,7 +69,7 @@ const HeritageSection = () => {
                                     exit="exit"
                                     className='text-[18px] lg:text-[32px] font-Montserrat font-bold text-white mb-6'><span className='text-[#90FFAE]'>Game</span> Preview</motion.h1>
                                 <div
-                                    className='flex items-center justify-start gap-5 mx-auto mobile-scroll'>
+                                    className='flex items-center justify-start gap-5 mx-auto '>
                                     <Image src={img1} alt='image-1' className='hidden md:block w-[150px] md:w-[200px] lg:w-[554px] h-[100px] md:h-[130px] lg:h-[277px] rounded-[23px] border-[2.5px] border-white autoplay1' />
                                     <Image src={img2} alt='image-2' className='w-auto h-[100px] md:h-[130px] lg:h-[277px] rounded-[23px] border-[2.5px] border-white autoplay1' />
                                     <Image src={img3} alt='image-3' className=' w-auto h-[100px] md:h-[130px] lg:h-[277px] rounded-[23px] border-[2.5px] border-white autoplay1' />
@@ -111,12 +111,12 @@ const HeritageSection = () => {
                                 whileInView="animate"
                                 exit="exit"
                                 className='text-[10px] md:text-[14px] lg:text-[22px] font-Montserrat text-white font-bold'>
-                                <li className=' lg:w-auth'><span className='text-[#90FFAE]'>Time Trials</span>: Compete in special timed challenges where the Alabai must navigate through complex mazes or
+                                <li className=' lg:w-auto'><span className='text-[#90FFAE]'>Time Trials</span>: Compete in special timed challenges where the Alabai must navigate through complex mazes or
                                     complete puzzles within a time limit.</li>
-                                <li className=' lg:w-auth'><span className='text-[#90FFAE]'>Exploration Mastery</span>: A mode that rewards players for fully exploring every nook and cranny of the game's world,
+                                <li className=' lg:w-auto'><span className='text-[#90FFAE]'>Exploration Mastery</span>: A mode that rewards players for fully exploring every nook and cranny of the game's world,
                                     uncovering all secrets</li>
                             </motion.ul>
-                            <div className='flex gap-5 lg:gap-[50px] -mt-2 lg:mt-[88px] '>
+                            <div className='flex gap-5 lg:gap-[50px] '>
                                 <button
                                     className='w-[80px] md:w-[100px] lg:w-[220px] h-[40px] lg:h-[66px] flex items-center justify-center md:justify-between rounded-full bg-white text-[14px] lg:text-[23px] font-Helvetica uppercase mt-4 lg:mt-10 mb-4 lg:mb-24 px-[8px] lg:px-[18px]'>
                                     <span className='lg:w-[42px] lg:h-[42px] p-[10px] rounded-full bg-[#201E26] hidden md:flex items-center justify-center'>
