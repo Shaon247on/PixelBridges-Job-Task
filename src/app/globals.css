@@ -156,7 +156,7 @@ body {
 
 .gradient-background2 {
   background: radial-gradient(circle, #fff17c -20%, #ffa600 100%);
-  height: 1950px;  
+  height: 1950px;
 }
 
 
@@ -293,12 +293,13 @@ ul li::before {
 
 
 .scroll-container1 {
-  
+
   scrollbar-color: #90FFAE rgba(0, 0, 0, 0.5);
 
 }
+
 .scroll-container2 {
-  
+
   scrollbar-color: #A4A8FF rgba(0, 0, 0, 0.5);
 
 }
@@ -307,17 +308,28 @@ ul li::before {
 
 /* ------------------------------  */
 
-@keyframes fade-in{
-  0%{ opacity: 1;}
-  30%{opacity: 0.5;}
-  60%{opacity: 0;}
-  100%{opacity: 0;}
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.autoplay1{
+.autoplay1 {
   animation: fade-in 1 linear;
   animation-timeline: view();
-  animation-range-start:400px ; 
+  animation-range-start: 400px;
 }
 
 
@@ -385,10 +397,10 @@ ul li::before {
   .image-background3,
   .image-background4 {
     background-size: cover;
-  } 
+  }
 
   .scroll-container {
-    height: 60vh;
+    height: 70vh;
   }
 
   .shadow-effect {
@@ -404,15 +416,16 @@ ul li::before {
     line-height: 40px;
   }
 
-  .water-reflection{
+  .water-reflection {
     -webkit-box-reflect: below -215px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
 
   }
-  .water-reflection2{
+
+  .water-reflection2 {
     -webkit-box-reflect: below -68px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
   }
-  
-  .water-reflection3{
+
+  .water-reflection3 {
     -webkit-box-reflect: below -32px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
 
   }
@@ -486,10 +499,10 @@ ul li::before {
   .image-background3,
   .image-background4 {
     background-size: cover;
-  }  
+  }
 
   .scroll-container {
-    height: 50vh;
+    height: 70vh;
   }
 
   .shadow-effect {
@@ -507,12 +520,13 @@ ul li::before {
 
   .water-reflection,
   .water-reflection2,
-  .water-reflection3{
+  .water-reflection3 {
     -webkit-box-reflect: below -32px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
 
   }
+
   .water-reflection4 {
-    -webkit-box-reflect: below -82px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2) );
+    -webkit-box-reflect: below -82px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
   }
 
   .scroll-container::-webkit-scrollbar {
@@ -521,5 +535,11 @@ ul li::before {
 
   .scroll-container::-webkit-scrollbar-thumb {
     background-color: #90FFAE;
+  }
+
+
+  .mobile-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
