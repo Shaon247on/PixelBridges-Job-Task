@@ -3,7 +3,7 @@ import React from 'react';
 
 const CardSection = () => {
     return (
-        <div className='grid grid-cols-4 mx-[76px] gap-[19px]'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 mx-[76px] gap-[19px]'>
             <div className="col-span-1 bg-gradient-to-b from-[#DBC70C] flex items-center justify-center rounded-tl-[30px] flex-col px-3 py-6">
                 <p className='text-[40px] font-black font-Montserrat text-white text-center leading-[46px]'>Community Building</p>
                 <p className='text-[32px] font-black font-Montserrat text-white'>and Initial Launch</p>

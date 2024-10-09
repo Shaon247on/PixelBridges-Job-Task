@@ -156,8 +156,7 @@ body {
 
 .gradient-background2 {
   background: radial-gradient(circle, #fff17c -20%, #ffa600 100%);
-  height: 1950px;
-  color: white;
+  height: 1950px;  
 }
 
 
@@ -347,7 +346,7 @@ ul li::before {
   }
 
   .gradient-background2 {
-    height: 1400px;
+    height: 1000px;
     padding: 20px;
   }
 
@@ -409,7 +408,9 @@ ul li::before {
     -webkit-box-reflect: below -215px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
 
   }
-  .water-reflection2,
+  .water-reflection2{
+    -webkit-box-reflect: below -68px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
+  }
   .water-reflection3,
   .water-reflection4 {
     -webkit-box-reflect: below -150px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
@@ -441,7 +442,7 @@ ul li::before {
   }
 
   .gradient-background2 {
-    height: 1200px;
+    height: 850px;
     padding: 15px;
   }
 
@@ -501,9 +502,12 @@ ul li::before {
 
   .water-reflection,
   .water-reflection2,
-  .water-reflection3,
+  .water-reflection3{
+    -webkit-box-reflect: below -32px linear-gradient(transparent, transparent 70%, rgba(128, 128, 128, 0.2));
+
+  }
   .water-reflection4 {
-    -webkit-box-reflect: below -120px linear-gradient(transparent, transparent 50%, rgba(128, 128, 128, 0.2));
+    -webkit-box-reflect: below -32px linear-gradient(transparent, transparent 50%, rgba(128, 128, 128, 0.2) );
   }
 
   .scroll-container::-webkit-scrollbar {
