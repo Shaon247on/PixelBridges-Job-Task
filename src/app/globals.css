@@ -405,7 +405,10 @@ ul li::before {
     line-height: 40px;
   }
 
-  .water-reflection,
+  .water-reflection{
+    -webkit-box-reflect: below -215px linear-gradient(transparent, transparent 60%, rgba(128, 128, 128, 0.2));
+
+  }
   .water-reflection2,
   .water-reflection3,
   .water-reflection4 {
